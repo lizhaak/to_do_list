@@ -1,0 +1,173 @@
+body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  background-color: #1E81F6;
+}
+
+main {
+  width: 800px;
+  margin: 25px auto 50px auto;
+  padding: 0px 20px 20px;
+  background-color: #efefef;
+  border: 1px solid #1E81F6;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  background: #1E81F6;
+  color: white;
+  height: 50px;
+  border-radius: 5px;
+  padding: 20px 0 0 0;
+  width: 800px;
+  margin: 15px auto;
+}
+
+h2 {
+  text-align: center;
+  background: #0eb8f7;
+  color: white;
+  height: 30px;
+  border-radius: 5px;
+  padding: 10px 0 0 0;
+  width: 800px;
+  margin: 15px auto;
+}
+
+.task-group {
+  height: 30px;
+  border-radius: 5px;
+  padding: 10px 0 0 0;
+  width: 800px;
+  margin: 0 0 25px 0;
+}
+
+label {
+  margin-left: 38%;
+  color: #1E81F6;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+  color: white;
+  width: 680px;
+  margin: 0 auto;
+}
+
+li {
+    width: 675px;
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    margin-bottom: 1px;
+    background-color: #1e81f6;
+}
+
+button.complete {
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    float: left;
+    margin: 12px 5px 0 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+button.delete {
+  background-color: red;
+  color: white;
+  height: 25px;
+  width: 25px;
+  float: right;
+  margin: 12px 5px 0 0;
+  border: 1px solid red;
+  border-radius: 12px;
+  font-size: 19px;
+  padding: 0px 0 5px 0;
+}
+
+li > div {
+  float: left;
+  font-size: 16px;
+  margin: 18px 0 0 0;
+}
+
+button.complete:hover {
+    background-color: #3cc154;
+}
+
+button.delete:hover {
+  background-color: maroon;
+}
+
+.completedTask {
+  background-color: #bec3be;
+  color: #5a5a5a;
+}
+
+.completedTask > button.complete {
+  background-color: #dadada;
+}
+
+.completedTask > button.delete {
+  background-color: #deabab;
+  border: 1px solid #deabab;
+}
+
+.checkmark {
+  display:inline-block;
+  width: 22px;
+  height: 22px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+
+.checkmark_stem {
+  position: absolute;
+  width: 3px;
+  height: 15px;
+  background-color: #3cc154;
+  left: 7px;
+  top: 4px;
+}
+
+.checkmark_kick {
+  position: absolute;
+  width: 5px;
+  height: 3px;
+  background-color: #3cc154;
+  left: 4px;
+  top: 16px;
+}
+
+button#task-submit {
+    border-radius: 15px;
+    border: 1px solid #30c130;
+    height: 25px;
+    background-color: #30c130;
+    width: 25px;
+}
+
+button#task-submit:hover {
+  background-color: #088708;
+  color: white;
+}
+
+input#task {
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  height: 20px;
+  color: #6f6d6d;
+  padding-left: 5px;
+}
+
+.completedTask > button.delete:hover {
+  background-color: red;
+  border: 1px solid white;
+}
+
+.notActive {
+  pointer-events: none;
+}
